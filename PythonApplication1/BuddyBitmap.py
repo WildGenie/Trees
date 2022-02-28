@@ -50,11 +50,11 @@ if __name__ == '__main__' :
 	A = [0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1]
 	test_cases = [(x, y) for x in range(len(A)) for y in range(1, len(A) - x + 1)]
 
-for each_test_case in test_cases :
-    pos, length = each_test_case
-    A = [0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1]
-    set_bit(A, pos, length)
-    print('after setting bit from ' + str(pos) + ' for '+str(length) + ' A is: ' + str(A))
-    A = [0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1]
-    clear_bit(A, pos, length)
-    print('after clearing bit from ' + str(pos) + ' for '+ str(length) + ' A is: ' + str(A))
+for each_test_case in test_cases:
+	pos, length = each_test_case
+	A = [0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1]
+	set_bit(A, pos, length)
+	print(f'after setting bit from {str(pos)} for {str(length)} A is: {A}')
+	A = [0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1]
+	clear_bit(A, pos, length)
+	print(f'after clearing bit from {str(pos)} for {str(length)} A is: {A}')
